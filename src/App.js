@@ -3,7 +3,8 @@ import { Routes, Route, Outlet } from "react-router-dom";
 
 import HomeComponent from "./routes/Home/HomeComponent";
 import Navigation from "./routes/Navigation/Navigation";
-import SignIn from "./routes/sign-in/SignIn";
+
+import Authentication from "./routes/authentication/Authentication";
 
 const Shop = () => {
   return <h1>I am the shop page</h1>;
@@ -17,7 +18,7 @@ const App = () => {
           {" "}
         </Route>
         <Route path="shop" element={<Shop />}></Route>
-        <Route path="signIn" element={<SignIn />} />
+        <Route path="auth" element={<Authentication />} />
       </Route>
     </Routes>
   );
